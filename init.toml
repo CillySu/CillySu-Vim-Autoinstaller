@@ -1,0 +1,114 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2021 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+
+[[custom_plugins]]
+    repo = 'lervag/vimtex'
+[[custom_plugins]]
+    repo = 'lilydjwg/colorizer'
+    # `on_cmd` option means this plugin will be loaded
+    # only when the specific commands are called.
+    # for example, when `:ColorHighlight` or `:ColorToggle`
+    # commands are called.
+    on_cmd = ['ColorHighlight', 'ColorToggle']
+    # `on_func` option means this plugin will be loaded
+    # only when the specific functions are called.
+    # for example, when `colorizer#ColorToggle()` function is called.
+    on_func = 'colorizer#ColorToggle'
+    # `merged` option is used for merging plugins directory.
+    # When `merged` is `true`, all files in this custom plugin
+    # will be merged into `~/.cache/vimfiles/.cache/init.vim/`
+    # for neovim or `~/.cache/vimfiles/.cache/vimrc/` for vim.
+    merged = false
+    # For more options see `:h dein-options`.
+
+[[custom_plugins]]
+    repo = 'tpope/vim-repeat'
+[[custom_plugins]]
+    repo = 'godlygeek/tabular'
+[[custom_plugins]]
+    repo = 'preservim/vim-markdown'
+[[custom_plugins]]
+    repo = 'flazz/vim-colorschemes'
+[[custom_plugins]]
+    repo = 'tpope/vim-surround'
+[[custom_plugins]]
+    repo = 'scrooloose/nerdtree'
+[[custom_plugins]]
+    repo = 'alessandroyorba/despacio'
+[[custom_plugins]]
+    repo = 'cocopon/iceberg.vim'
+[[custom_plugins]]
+    repo = 'vim-airline/vim-airline'
+[[custom_plugins]]
+    repo = 'tpope/vim-surround'
+
+
+
+[options]
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+   # set spacevim theme. by default  layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "darkdefault"
+    colorscheme_bg = "dark"
+
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+[[layers]]
+    name = 'git'
+[[layers]]
+    name = 'VersionControl'
+
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2020 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+    
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+
+# Settings for NeoVide
